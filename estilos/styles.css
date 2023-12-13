@@ -1,0 +1,93 @@
+/* Estilos generales */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(127, 16, 16);
+  color: #FFFFFF;
+}
+logo_container{
+background-color: black;
+}
+.menu-icon{
+background-color: black;
+}
+.panorama-container {
+        width: 800px;
+        height: 600px;
+        margin: 0 auto;
+}
+.panorama-title {
+        font-family: Arial, sans-serif;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+        margin-bottom: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+nav {
+  background-color: #444;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+#site-head{
+background-color: black;
+}
+.menu-icon{
+background-color: black;
+}
+.vertical{
+background-color: black;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#site-head-content{
+background-color: black;
+text-align: center; 
+}
+#site-head-content img{
+width: 100px;
+}
+
+
+canvas {
+  width: 100%;    /* Ajusta el ancho del canvas al 100% del contenedor */
+  height: 500px;  /* Altura fija para el canvas, ajusta según tus necesidades */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde del canvas */
+}

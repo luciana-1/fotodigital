@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueteca</title>
+    <link rel="stylesheet" href="pannellum/pannellum.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <script type="text/javascript" src="pannellum/pannellum.js"></script>
+    
+</head>
+<body>
+    <header id="site-head">
+        <div class="vertical">
+            <div id="site-head-content" class="inner">
+                <img src="biblioteca.png" width="100%" height="100%" alt="Biblioteca Universidad del valle sede Melendez" id="logo" data-height-percentage="60"/>
+            </div>
+        </div>
+    </header>
+
+    <div class="panorama-container">
+        <div class="panorama-title">Recorrido virtual Maqueteca</div>
+        <div id="panorama1"></div>
+    </div>
+
+    <script>
+
+function openImage(imageUrl) {
+        window.open(imageUrl, '_blank');
+    }
+pannellum.viewer('panorama1', {   
+    "default": {
+        "firstScene": "Entrada",
+        "author": "Luciana Rojas",
+        "sceneFadeDuration": 1000,
+		"autoLoad": true,
+		"compass": true,
+        "hotSpotDebug":false,
+		"northOffset": 0
+    },
+
+    "scenes": {
+        "Entrada": {
+            "title": "Entrada Maqueteca",
+            "hfov": 1000,
+            "pitch": 0,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/U9SYyLA.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -6.352,
+                    "yaw": -6.9615,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto2",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -22.42,
+                    "yaw": 87.4,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto7",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.62,
+                    "yaw": 46.77,
+                    "type": "scene",
+                    "text": "Ver maqueta Ermita",
+                    "clickHandlerFunc": function() {
+                        openImage('video.mp4');
+                    }
+                }
+                
+			]
+        },
+        "foto2": {
+            "title": "Primer Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/Pv5UFR8.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -15.26,
+                    "yaw": 172.89,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "Entrada",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -5.214,
+                    "yaw": 351.35,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto3",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                }				
+            ]
+        },
+        "foto3": {
+            "title": "Primer Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/ygXR1k5.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -13.43,
+                    "yaw": -190.17,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto2",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -4.49,
+                    "yaw": 7.8,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto4",
+                    "targetYaw": -30,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto4": {
+            "title": "Final de Primer Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/Z86ggX9.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -10.98,
+                    "yaw": -201.34,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto3",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -13.42,
+                    "yaw": 121.72,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto5",
+                    "targetYaw": 65,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto5": {
+            "title": "Segundo Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/JVPuqXR.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -6.6613,
+                    "yaw": -120.607,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto4",
+                    "targetYaw": -60,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -12.61,
+                    "yaw": 64.41,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto6",
+                    "targetYaw": 89,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto6": {
+            "title": "Segundo Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/XRyjVF8.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -6.883,
+                    "yaw": 270.018,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto5",
+                    "targetYaw": 240,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -11.659,
+                    "yaw": 70.1195,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto7",
+                    "targetYaw": 95,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto7": {
+            "title": "Final Segundo Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/5JNqYKe.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -6.3,
+                    "yaw": -86.24,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto6",
+                    "targetYaw": 230,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -2.85,
+                    "yaw": -52.3796,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto8",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                }
+                ,
+				{
+                    "pitch": -19,
+                    "yaw": -153.65,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "Entrada",
+                    "targetYaw": -115,
+                    "targetPitch": 0
+                }	
+            ]
+        },
+        "foto8": {
+            "title": "Tercer Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/eIC56Wb.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -12.7,
+                    "yaw": -178.13,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto7",
+                    "targetYaw": 143,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -7.82,
+                    "yaw": -8.01,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto9",
+                    "targetYaw": -120,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto9": {
+            "title": "Tercer Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/SDUcMF7.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -12.30,
+                    "yaw": 46.88,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto8",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -6.23,
+                    "yaw": -148.959,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto10",
+                    "targetYaw": 148,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto10": {
+            "title": "Final Tercer Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/6PDYDMJ.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -8.3,
+                    "yaw": -35.64,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto9",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -3.49,
+                    "yaw": 317.721,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto11",
+                    "targetYaw": 136,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto11": {
+            "title": "Cuarto Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/2RiblBm.jpg",
+            "hotSpots": [
+				{
+                    "pitch": 1.75,
+                    "yaw": -20.8565,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto10",
+                    "targetYaw": 140,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -13.10,
+                    "yaw": 188.478,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto12",
+                    "targetYaw": 27,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto12": {
+            "title": "Cuarto Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/UfjZusM.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -13.43,
+                    "yaw": 206.84,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto11",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -7.55,
+                    "yaw": 0.974,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto13",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto13": {
+            "title": "Final Cuarto Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/AV627Ew.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -13.95,
+                    "yaw": -182.43,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto12",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -7.64,
+                    "yaw": -139.05,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto14",
+                    "targetYaw": 37,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto14": {
+            "title": "Quinto Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/UZTtGW9.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -12.13,
+                    "yaw": -162.18,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto13",
+                    "targetYaw": 50,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -7.82,
+                    "yaw": -8.01,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto15",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto15": {
+            "title": "Quinto Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/aN99Aq3.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -15.64,
+                    "yaw": -164.16,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto14",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -7.82,
+                    "yaw": -8.01,
+                    "type": "scene",
+                    "text": "seguir",
+                    "sceneId": "foto16",
+                    "targetYaw": -165,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        "foto16": {
+            "title": "Final Quinto Pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/gSpU5FP.jpg",
+            "hotSpots": [
+				{
+                    "pitch": -6.378,
+                    "yaw": 1.848,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "foto15",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                }		
+            ]
+        },
+        
+
+    }
+
+});
+
+    </script>
+    </div>
+  </body>
+</html>
